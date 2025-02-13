@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<header>
+    <div class="titulo">
+        INSTITUCION EDUCATIVA ISAAC NEWTON
+    </div>
+</header>
+<body>
+    <header>
+        <div class="titulo">
+            INSTITUCIÓN EDUCATIVA ISAAC NEWTON
+        </div>
+    </header>
+    
+    <div class="login">
+        <div>
+            <img src="logo.png" height="150px">
+        </div>
+        <h2>Iniciar Sesión</h2>
+        <input type="text" id="username" placeholder="Usuario" required>
+        <input type="password" id="password" placeholder="Contraseña" required>
+        <button onclick="validateUser()">Ingresar</button>
+    </div>
+    
+    <script>
+        function validateUser() {
+            let user = document.getElementById("username").value;
+            let pass = document.getElementById("password").value;
+            if (user.trim() !== "" && pass.trim() !== "") {
+                alert("Inicio de sesión exitoso");
+            } else {
+                alert("Por favor, ingrese usuario y contraseña.");
+            }
+        }
+    </script>
+</body>
+</html>

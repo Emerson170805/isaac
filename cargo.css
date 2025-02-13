@@ -1,0 +1,85 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+}
+
+/* Header */
+header {
+    background: #333;
+    color: white;
+    padding: auto;
+    height: auto;
+    width: 22vh;
+}
+
+/* Navegación */
+
+/* Estiliza el contenedor de navegación */
+nav {
+    list-style: none; /* Elimina los estilos de lista por defecto (viñetas) */
+    padding: 1px; /* Añade un relleno interno para separar los elementos del borde */
+    margin: 10px; /* Agrega un margen externo para evitar que el nav toque otros elementos */
+    display: flex; /* Usa flexbox para organizar los elementos internos */
+    flex-direction: column; /* Organiza los elementos en columna en lugar de fila */
+    align-items: stretch; /* Hace que los elementos ocupen todo el ancho disponible */
+    width: auto; /* Define un ancho fijo para evitar que el contenido sobresalga */
+}
+
+/* Estiliza los elementos de lista dentro del nav */
+nav li {
+    display: flex;
+    width: auto; /* Ocupará todo el ancho del contenedor */
+    height: auto;
+    text-align: center; /* Centra el texto dentro del elemento */
+    justify-content: center;
+    padding: 5px;
+}
+
+/* Estiliza los enlaces dentro de los elementos de lista */
+nav li a {
+    width: 60%;
+    display: inline-block; /* Permite aplicar padding y fondo solo al contenido */
+    background-color: rgb(5, 35, 173); /* Color de fondo más visible */
+    padding: 10px 20px; /* Aumenta el área de fondo sin afectar el texto */
+    font-size: 14px; /* Reduce el tamaño del texto */
+    border-radius: 5px; /* Opcional: bordes redondeados */
+    text-align: center;
+    color: white;
+    letter-spacing: 1px; /* Aumenta el espacio entre letras */
+    text-decoration: none;
+    border-radius: 10px;
+}
+
+/* Contenido Principal */
+main {
+    margin: 10px;
+    background-color: aqua;
+    width: 100%;
+}
+.edit{
+    background-color: bisque;
+    width: 100%;
+    height: 10vh;
+}
+.datos{
+    background-color: rgb(124, 79, 23);
+    width: 100%;
+    height: 10vh;
+}
+.botones{
+    background-color: aquamarine;
+}
+button {
+    background-color: blue; /* Fondo azul */
+    color: white; /* Texto blanco */
+    padding: 10px 20px; /* Aumenta el espacio alrededor del texto */
+    font-size: 14px; /* Reduce el tamaño del texto */
+    border: none; /* Elimina el borde predeterminado */
+    border-radius: 8px; /* Bordes redondeados para un mejor diseño */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+}
